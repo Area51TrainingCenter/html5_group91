@@ -1,0 +1,12 @@
+article {
+	width: 400px;
+	height: 300px;
+	background-color: red;
+	/*margin-top:200px;
+	margin-left: 100px;
+	margin-bottom: 2000px;
+	margin-right: 4000px*/
+	margin: 200px 4000px 2000px 100px;
+	margin: 200px 100px; /*margin: 200px 100px 200px 100px*/
+	margin: 200px; /*margin: 200px 200px 200px 200px*/
+}
