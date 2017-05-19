@@ -1,0 +1,54 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin:0;
+	padding: 0;
+}
+
+main {
+	background-color: grey;
+	overflow: hidden;
+}
+
+main header {
+	line-height: 37px;
+	font-family: Verdana;
+	font-size:15px;
+	color:#ffffff;
+	text-indent: 18px;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: relative;
+}
+
+main header img {
+	position: absolute;
+	right: 0;
+	cursor:pointer;
+}
+
+main article.banner {
+	height:350px;
+	background-color: #40bdb3
+}
+
+main section.enlace{
+	height:150px;
+	background-color: grey
+}
+
+main section.flechaMorado {
+	height: 600px;
+	background-color: purple
+}
+
+main figure {
+	margin:0;
+	height: 600px;
+	background-color: brown
+}
+
+
+
+
