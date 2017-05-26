@@ -93,9 +93,30 @@ main section.flechaMorado i {
 
 main figure {
 	margin:0;
-	background-color: brown
+	background-position: right top;
+	background-size: cover;
 }
 
+main figure.puente {
+	background-image: url(../img/puente.jpg)
+}
+
+main figure.chica {
+	background-image: url(../img/chica.jpg)
+}
+
+main article.articulo {
+	font-size:0.8rem;
+	color:#515151;
+	padding:2.4rem;
+	background-color: #fff;
+	line-height: 1.2rem
+}
+
+main article.articulo h2 {
+	font-size: 1rem;
+	color: #088ca5;
+}
 
 
 
