@@ -1,0 +1,129 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin:0;
+	padding: 0;
+	font-size:15px;
+	font-family: Montserrat
+}
+
+main {
+	background-color: grey;
+	overflow: hidden;
+}
+
+main header {
+	line-height: 2.5rem;
+	font-size:1rem;
+	color:#ffffff;
+	text-indent: 18px;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: relative;
+}
+
+main header i {
+	position: absolute;
+	right: 0;
+	cursor:pointer;
+	line-height: 2.5rem !important;
+    font-size: 1.5rem !important;
+    padding-right: 10px;
+}
+
+main article.banner {
+	padding-top:3.5rem;
+	padding-bottom:3.5rem;
+	padding-left: 1.2rem;
+	padding-right: 8.4rem;
+	background-color: #40bdb3
+}
+
+main article.banner h1 {
+	color:#fff;
+}
+
+main article.banner h3 {
+	color:rgba(255, 255, 255, .5);
+	position: relative;
+}
+
+main article.banner h3 i {
+	position: absolute;
+	right: 0;
+	color:#fff;
+}
+
+
+main section.enlace{
+	background-color: #27212c;
+	line-height: 10rem;
+	color:#9282a0;
+	padding-left:1.2rem;
+	position: relative;
+}
+
+main section.enlace i {
+	position: absolute;
+	right: 0;
+	line-height: 10rem;
+	width:7rem;
+	background-color:#bc3183;
+	text-align: center; 
+	color: #fff;
+}
+
+main section.flechaMorado,
+figure {
+	height: 18rem;
+	background: purple
+}
+
+/*.cssgradients main section.flechaMorado {
+	background:linear-gradient(red, orange);
+};*/
+
+
+
+main section.flechaMorado {
+	background-color: purple;
+	text-align: center;
+	line-height: 18rem;
+	font-size:3.5rem;
+	color:#fff;
+}
+
+main section.flechaMorado i {
+
+}
+
+main figure {
+	margin:0;
+	background-position: right top;
+	background-size: cover;
+}
+
+main figure.puente {
+	background-image: url(../img/puente.jpg)
+}
+
+main figure.chica {
+	background-image: url(../img/chica.jpg)
+}
+
+main article.articulo {
+	font-size:0.8rem;
+	color:#515151;
+	padding:2.4rem;
+	background-color: #fff;
+	line-height: 1.2rem
+}
+
+main article.articulo h2 {
+	font-size: 1rem;
+	color: #088ca5;
+}
+
+
+

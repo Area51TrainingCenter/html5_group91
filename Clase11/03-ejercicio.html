@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<style>
+		html {
+			font-size: 20px;
+			font-family: Roboto;
+		}
+		header {
+			height: 200px;
+			background-color: black;
+		}
+	    div {
+	    	font-size: 0;
+	    	max-width: 1100px;
+	    	margin: 0 auto;
+	    }
+	    article, section, aside.contenido, p {
+	    	width: 100%;
+	    	height: 400px;
+	    	display: inline-block;
+	    }
+		article {
+			background-color:yellow;
+		}
+		section {
+			background-color: orange;
+		}
+		aside.contenido {
+			background-color: red
+		}
+
+		p {
+			background-color: green;
+		}
+
+		footer {
+			background-color:blue;
+			overflow: auto;
+		}
+
+		footer aside {
+			width:100%;
+			text-align: center;
+			color: #fff;
+			font-size:1.2rem;
+			line-height: 1.8rem
+		}
+
+		footer address {
+			width:100%;
+			text-align: center;
+			color:#fff;
+			font-size:1.2rem;
+			line-height: 1.8rem
+		}
+
+		/*Versión Tableta*/
+		@media screen and (min-width:640px) {
+			article, p, section, aside.contenido {
+				width:33.3333333333%;
+			}
+
+			footer aside,
+			footer address {
+				font-size: 0.8rem;
+				line-height: 2.3rem;
+				float:left;
+				width:33.333333333%;
+			}
+		}
+
+		/*Versión Desktop*/
+		@media screen and (min-width:1100px) {
+			article, p, section, aside.contenido {
+				width:16.6666666667%;
+			}
+
+/*			div {
+				width:1100px;
+			}*/
+		}
+	</style>
+</head>
+<body>
+	<header></header>
+	<div>
+		<article></article>
+		<section></section>
+		<aside class="contenido"></aside>
+		<p></p>
+		<article></article>
+		<section></section>
+	</div>
+	<footer>
+		<aside>@Copyright 2017</aside>
+		<address>direccion@correo.com</address>
+		<address>Teléfono: 981818181</address>
+	</footer>
+</body>
+</html>
