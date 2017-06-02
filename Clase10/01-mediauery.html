@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		div {
+			width:200px;
+			height: 200px;
+			background-color: red;
+		}
+
+
+		/*si ancho de la pantalla del usuario es menor a 600px
+		entonces se aplica la siguente regla*/
+
+		/*max-width: significa "hasta"*/
+
+		@media screen and (max-width:600px){
+
+			div {
+				background-color: green;
+			}
+		}
+
+		/*min-width: significa como "desde"*/
+		@media screen and (min-width:900px) {
+			div {
+				background-color: yellow
+			}
+		}
+
+		/*"desde" 600px "hasta" 900px */
+		@media screen and (min-width:600px) and (max-width:900px){
+			div {
+				background-color: blue
+			}
+		}
+
+		@media print and (min-width:300px){
+			div {
+				background-color: orange
+			}
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+
+	<div></div>
+
+</body>
+</html>
