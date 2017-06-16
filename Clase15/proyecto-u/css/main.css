@@ -136,11 +136,30 @@ main div.sliders {
 /*INICIO DE LOS TEXTOS*/
 main article.textos {
 	overflow: hidden;
-	background-color: #fff
+	background-color: #fff;
+	padding-top:48px;
 }
 
 main article.textos div.col1 {
-	width:33.33333333%;
+	width:33.3333333333%;
+	float: left;
+}
+
+main article.textos div.col1 div.elemento {
+	width:270px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+main article.textos div.col1 div.elemento div {
+	float:right;
+	width: 70%;
+}
+
+main article.textos div.col1 div.elemento h2 {
+	margin-top:0;
+	padding-top:0;
+	color:#894aa3;
 }
 
 
