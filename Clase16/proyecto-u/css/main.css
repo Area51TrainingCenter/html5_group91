@@ -208,12 +208,67 @@ main footer div.columna {
 	display: inline-block;
 	width:25%;
 	vertical-align: top;
-	padding:30px;
+	padding:17px;
 
 }
 
 main footer div.columna div.texto {
-	font-size:15px;
+	font-size:14px;
+	line-height: 22px;
+	color:#999;
+}
+
+main footer div.columna div.texto h2 {
+	font-size: 15px;
+	color:#666;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+main footer div.columna div.texto a,
+main footer div.columna div.texto a:link,
+main footer div.columna div.texto a:active,
+main footer div.columna div.texto a:visited
+{
+	text-decoration: none;
+	color:#999;
+}
+
+main footer div.columna div.texto a:hover {
+	text-decoration: underline;
+}
+
+main footer div.columna div.texto p {
+	margin:0;
+}
+
+main footer div.columna div.texto ul {
+	padding:0;
+	margin: 0;
+	list-style: none;
+}
+
+main footer div.columna div.texto li a,
+main footer div.columna div.texto li a:link,
+main footer div.columna div.texto li a:visited,
+main footer div.columna div.texto li a:active,
+main footer div.columna div.texto li a:hover {
+	border-bottom: 1px solid #999;
+	display: block;
+	line-height: 34px;
+	text-decoration: none
+}
+
+main footer div.columna div.texto h4 {
+	text-transform: capitalize;
+	margin:0;
+}
+
+main footer div.columna:nth-child(3) div.texto a {
+	color:#874ca0;
+	text-align: right;
+	display: block;
+	text-transform: capitalize;
 }
 
 
