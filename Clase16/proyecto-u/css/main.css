@@ -170,6 +170,8 @@ main article.textos div.col1 div.elemento h2 {
 
 main article.proyectos {
 	overflow: hidden;
+	background-color: #ebebea;
+	padding:52px 0;
 }
 
 main article.proyectos div.col2 {
@@ -179,7 +181,48 @@ main article.proyectos div.col2 {
 
 main article.proyectos div.col2 div.proyecto {
 	padding:10px;
+	margin:0 auto;
+	width:280px;
+	text-align: center;
+	background-color: #fff
 }
+
+main article.proyectos div.col2 div.proyecto img {
+	max-width: 260px
+}
+
+main article.proyectos div.col2 div.proyecto h2 {
+	color:#894aa3;
+	font-size:18px;	
+}
+
+/*FIN DE  PROYECTOS*/
+
+/*INICIO DEL PIE*/
+
+main footer {
+	font-size:0px;
+}
+
+main footer div.columna {
+	display: inline-block;
+	width:25%;
+	vertical-align: top;
+	padding:30px;
+
+}
+
+main footer div.columna div.texto {
+	font-size:15px;
+}
+
+
+
+
+
+
+
+
 
 
 
