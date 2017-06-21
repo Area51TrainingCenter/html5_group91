@@ -6,7 +6,8 @@
 html, body {
     margin: 0;
     padding:0;
-    background-color: #d0d0d0
+    background-color: #d0d0d0;
+    font-size: 16px;
 }
 
 main {
@@ -27,8 +28,9 @@ main header {
 
 main header div.logo {
 	float:left;
-	padding-top: 46px;
-	padding-left: 30px;
+	padding-top:2.875rem;
+/*	padding-top: 46px;
+	padding-left: 30px;*/
 }
 
 main header div.menu-buscador {
@@ -52,7 +54,8 @@ main header div.menu-buscador div.buscador input {
 	background-color: transparent;
 	line-height: 28px;
 	width:224px;
-	font-size: 12px;
+	font-size:0.75rem;
+	/*font-size: 12px;*/
 	padding-left:8px;
 	padding-right: 8px;
 	outline: none
@@ -113,8 +116,10 @@ main header blockquote {
 	padding: 0;
 	margin: 0;
 	text-align: center;
-	font-size:18px;
-	line-height: 30px;
+	font-size: 1.125rem;
+	/*font-size:18px;*/
+	line-height: 1.875rem;
+	/*line-height: 30px;*/
 	padding: 25px 126px;
 /*	padding-top: 25px;
 	padding-bottom: 25px;
@@ -315,6 +320,11 @@ main footer div.texto2 {
 	float: right
 }
 
+@media screen and (max-width: 960px) {
+	main {
+		width:100%;
+	}
+}
 
 
 
