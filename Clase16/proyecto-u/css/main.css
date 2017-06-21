@@ -202,6 +202,7 @@ main article.proyectos div.col2 div.proyecto h2 {
 
 main footer {
 	font-size:0px;
+	margin-bottom:30px;
 }
 
 main footer div.columna {
@@ -271,6 +272,48 @@ main footer div.columna:nth-child(3) div.texto a {
 	text-transform: capitalize;
 }
 
+main footer div.columna div.texto input[type="text"],
+main footer div.columna div.texto input[type="email"]  {
+	width:100%;
+	font-size:15px;
+	line-height: 31px;
+	border-radius:3px;
+	border:0;
+	padding:0 10px;
+	background-color: #e6e6e6;
+	margin-bottom: 8px
+}
+
+main footer div.columna div.texto input[type="submit"]  {
+	font-size:15px;
+	line-height: 31px;
+	border-radius:3px;
+	border:0;
+	padding:0 10px;
+	background-color: #e6e6e6;
+	margin-bottom: 8px;
+	color: #874ca0;
+	text-transform: uppercase
+}
+
+main footer aside{
+	color:#d0d0d0;
+	font-size:15px;
+	overflow: hidden;
+	line-height: 50px;
+	background-color: #444;
+	padding-left: 16px;
+	padding-right:16px;
+}
+
+main footer div.texto1 {
+	float:left;
+
+}
+
+main footer div.texto2 {
+	float: right
+}
 
 
 
