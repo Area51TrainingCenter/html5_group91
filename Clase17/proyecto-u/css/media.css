@@ -3,8 +3,18 @@
 		width:100%;
 	}
 
+
+	main header div.logo {
+		padding-bottom:1.875rem;
+	}
+
+	main header blockquote {
+		padding:25px;
+	}
+
 	main header div.menu-buscador {
 		position: initial;
+		/*margin-right: 60px;*/
 	}
 
 	main header div.menu-buscador div.iconos {
@@ -20,8 +30,42 @@
 	}
 
 	main header div.menu-buscador div.buscador {
-		display: none;
+		background-color: #9c49a7;
+		border-radius: 6px;
+	    top: 68px;
+	    right:80px;
+	    /*display: none;*/
+	    transform: scale(0)
 	}
+
+	main header div.menu-buscador div.buscador.mostrarBuscador {
+		transform: scale(1);
+	}
+
+	main header div.menu-buscador div.buscador input {
+		font-size: 1rem;
+		color:#fff;
+	}
+
+	main header div.menu-buscador div.buscador input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  color: #fff;
+	}
+	
+	main header div.menu-buscador div.buscador input::-moz-placeholder { /* Firefox 19+ */
+	  color: #fff;
+	}
+
+	main header div.menu-buscador div.buscador input:-ms-input-placeholder { /* IE 10+ */
+	  color: #fff;
+	}
+
+	main header div.menu-buscador div.buscador input:-moz-placeholder { /* Firefox 18- */
+	  color: #fff;
+	}
+
+
+
+
 
 	main header div.menu-buscador nav {
 		position: absolute;
@@ -56,7 +100,27 @@
 	main header div.menu-buscador nav li {
 		float:none;
 	}
+}
 
+@media screen and (max-width:450px) {
+	main header div.logo {
+		padding-bottom: 0;
+	}
 
+	main header div.menu-buscador {
+		margin-top:0;
+	}
 
+	main header div.menu-buscador div.iconos {
+		margin-top: 0;
+	}
+
+	main header div.menu-buscador nav {
+		margin-top:90px;
+	}
+
+	main header div.menu-buscador div.buscador {
+		top: 127px;
+    	right: 37px;
+	}
 }
