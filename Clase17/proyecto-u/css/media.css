@@ -1,0 +1,62 @@
+@media screen and (max-width:960px) {
+	main {
+		width:100%;
+	}
+
+	main header div.menu-buscador {
+		position: initial;
+	}
+
+	main header div.menu-buscador div.iconos {
+		display: block;
+		margin-top:30px;
+	}
+
+	main header div.menu-buscador div.iconos a {
+		text-decoration: none;
+		color: #9c49a7;
+		font-size:26px;
+		padding:10px;
+	}
+
+	main header div.menu-buscador div.buscador {
+		display: none;
+	}
+
+	main header div.menu-buscador nav {
+		position: absolute;
+		top: 33px;
+		right: -150px;
+		width: 150px;
+		transition: all 700ms;
+		background-color: #9c49a7;
+		
+	}
+
+	main header div.menu-buscador nav a,
+	main header div.menu-buscador nav a:link,
+	main header div.menu-buscador nav a:visited {
+		font-size: 16px;
+		padding: 0 17px;
+    	line-height: 40px;
+		color:#fff;
+		display: block;
+	}
+
+	main header div.menu-buscador nav a:active {
+		background-color: #fff;
+		color:#9c49a7;
+	}
+
+
+	main header div.menu-buscador nav.aparecer {
+		right:0px;
+	}
+
+	main header div.menu-buscador nav li {
+		float:none;
+	}
+
+
+
+}
