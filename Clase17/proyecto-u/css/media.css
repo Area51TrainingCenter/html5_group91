@@ -102,9 +102,29 @@
 	}
 }
 
+@media screen and (max-width:830px){
+	main article.textos div.col1 {
+		width:50%;
+		margin-bottom:30px;
+	}
+
+	main article.textos div.col1 div.elemento {
+		width:96%;
+	}
+}
+
 @media screen and (max-width:450px) {
 	main header div.logo {
 		padding-bottom: 0;
+	}
+
+	main article.textos div.col1 {
+		width:100%;
+		margin-bottom:30px;
+	}
+
+	main article.textos div.col1 div.elemento div {
+		width:80%;
 	}
 
 	main header div.menu-buscador {
