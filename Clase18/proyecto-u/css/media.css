@@ -1,0 +1,146 @@
+@media screen and (max-width:960px) {
+	main {
+		width:100%;
+	}
+
+
+	main header div.logo {
+		padding-bottom:1.875rem;
+	}
+
+	main header blockquote {
+		padding:25px;
+	}
+
+	main header div.menu-buscador {
+		position: initial;
+		/*margin-right: 60px;*/
+	}
+
+	main header div.menu-buscador div.iconos {
+		display: block;
+		margin-top:30px;
+	}
+
+	main header div.menu-buscador div.iconos a {
+		text-decoration: none;
+		color: #9c49a7;
+		font-size:26px;
+		padding:10px;
+	}
+
+	main header div.menu-buscador div.buscador {
+		background-color: #9c49a7;
+		border-radius: 6px;
+	    top: 68px;
+	    right:80px;
+	    /*display: none;*/
+	    transform: scale(0)
+	}
+
+	main header div.menu-buscador div.buscador.mostrarBuscador {
+		transform: scale(1);
+	}
+
+	main header div.menu-buscador div.buscador input {
+		font-size: 1rem;
+		color:#fff;
+	}
+
+	main header div.menu-buscador div.buscador input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  color: #fff;
+	}
+	
+	main header div.menu-buscador div.buscador input::-moz-placeholder { /* Firefox 19+ */
+	  color: #fff;
+	}
+
+	main header div.menu-buscador div.buscador input:-ms-input-placeholder { /* IE 10+ */
+	  color: #fff;
+	}
+
+	main header div.menu-buscador div.buscador input:-moz-placeholder { /* Firefox 18- */
+	  color: #fff;
+	}
+
+
+
+
+
+	main header div.menu-buscador nav {
+		position: absolute;
+		top: 33px;
+		right: -150px;
+		width: 150px;
+		transition: all 700ms;
+		background-color: #9c49a7;
+		
+	}
+
+	main header div.menu-buscador nav a,
+	main header div.menu-buscador nav a:link,
+	main header div.menu-buscador nav a:visited {
+		font-size: 16px;
+		padding: 0 17px;
+    	line-height: 40px;
+		color:#fff;
+		display: block;
+	}
+
+	main header div.menu-buscador nav a:active {
+		background-color: #fff;
+		color:#9c49a7;
+	}
+
+
+	main header div.menu-buscador nav.aparecer {
+		right:0px;
+	}
+
+	main header div.menu-buscador nav li {
+		float:none;
+	}
+}
+
+@media screen and (max-width:830px){
+	main article.textos div.col1 {
+		width:50%;
+		margin-bottom:30px;
+	}
+
+	main article.textos div.col1 div.elemento {
+		width:96%;
+	}
+}
+
+@media screen and (max-width:450px) {
+	main header div.logo {
+		padding-bottom: 0;
+	}
+
+	main article.textos div.col1 {
+		width:100%;
+		margin-bottom:30px;
+	}
+
+	main article.textos div.col1 div.elemento div {
+		width:80%;
+	}
+
+	main header div.menu-buscador {
+		margin-top:0;
+	}
+
+	main header div.menu-buscador div.iconos {
+		margin-top: 0;
+	}
+
+	main header div.menu-buscador nav {
+		margin-top:90px;
+	}
+
+	main header div.menu-buscador div.buscador {
+		top: 127px;
+    	right: 37px;
+	}
+}
