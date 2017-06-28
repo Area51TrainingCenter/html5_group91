@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="carusel.css">
+	<style>
+		body {
+			background-color: rgba(0,0,0,0.3)
+		}
+		.owl-carousel {
+			width:100%;
+			height:200px;
+		}
+		.item {
+			border:1px solid black;
+			background-color: rgba(0,0,0,0.5);
+			height: 200px;
+		}
+	</style>
+</head>
+<body>
+
+<div class="owl-carousel owl-theme">
+    <div class="item"><h4>1</h4></div>
+    <div class="item"><h4>2</h4></div>
+    <div class="item"><h4>3</h4></div>
+    <div class="item"><h4>4</h4></div>
+    <div class="item"><h4>5</h4></div>
+    <div class="item"><h4>6</h4></div>
+    <div class="item"><h4>7</h4></div>
+    <div class="item"><h4>8</h4></div>
+    <div class="item"><h4>9</h4></div>
+    <div class="item"><h4>10</h4></div>
+    <div class="item"><h4>11</h4></div>
+    <div class="item"><h4>12</h4></div>	
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="carusel.js"></script>
+<script>
+	$(function(){
+
+	    var owl = $('.owl-carousel');
+	    owl.owlCarousel({
+	        items: 1,
+	        loop: true,
+	        margin: 10,
+	        autoplay: true,
+	        lazyLoad: true,
+	        autoplayTimeout: 4000,
+	        autoplayHoverPause: false,
+	        smartSpeed:450,
+	        navText: [ '<span class="mioIzquierda">--</span>', '<span class="mioDerecha">xxx</span>' ],
+	        responsive: {
+	            0: {
+	                items: 3,
+	                dots: false,
+	                nav:true
+	            },
+	            750: {
+	                items: 1,
+	                dots: true,
+	                nav:false
+	            },
+	            1100: {
+	                items: 1,
+	                dots: true,
+	                nav:true
+	            },
+	            1200: {
+	                items: 1,
+	                dots: true,
+	                nav:false
+	            },
+	            1400: {
+	                items: 1,
+	                dots: true,
+	                nav:false
+	            }
+	        }
+	    });
+
+		
+	})
+</script>
+
+</body>
+</html>

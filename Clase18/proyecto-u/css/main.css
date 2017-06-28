@@ -149,6 +149,41 @@ main div.sliders {
 	background-color: #333
 }
 
+main div.sliders div.item {
+	height:380px;
+}
+
+/*main div.sliders div#b1 {
+	background-image: url(../img/banners/banner01.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+main div.sliders div#b2 {
+	background-image: url(../img/banners/banner02.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+main div.sliders div#b3 {
+	background-image: url(../img/banners/banner03.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+main div.sliders div#b4 {
+	background-image: url(../img/banners/banner04.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+main div.sliders div#b5 {
+	background-image: url(../img/banners/banner05.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+*/
+
 /*FIN DEL SLIDER*/
 
 /*INICIO DE LOS TEXTOS*/
@@ -337,6 +372,43 @@ main footer div.texto2 {
 		width:100%;
 	}
 }
+
+.owl-controls {
+    margin-top: -50px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+	background-color: red
+}
+
+.owl-theme .owl-dots .owl-dot:hover span {
+	background-color: green
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+	background-color: blue
+}
+
+.owl-nav {
+	position: relative
+}
+
+.owl-carousel .owl-controls .owl-nav .owl-prev {
+	position: absolute;
+	top:-200px;
+	display: block;
+}
+
+.owl-carousel .owl-controls .owl-nav .owl-next {
+	position: absolute;
+	top:-200px;
+	right:4px;
+	display: block;
+}
+
+
+
+
 
 
 

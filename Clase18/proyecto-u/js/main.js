@@ -18,5 +18,38 @@ $(function(){
 		$("div.buscador").toggleClass("mostrarBuscador")
 	})
 
+	$("div.sliders").owlCarousel({
+		loop: true,
+/*		items: 4,
+		margin:10,
+*/		autoplay: true,
+		autoplayTimeout: 2500,
+		autoplayHoverPause: true,
+		nav:true,
+		navText: [ '<span class="mioIzquierda"><<</span>', '<span class="mioDerecha">>></span>' ],
+		responsive: {
+			0:{
+				dots:false,
+				items:1,
+				margin:0
+			},
+			600: {
+				items:2,
+				margin:10,
+				nav:false
+			},
+			980: {
+				items:2
+			}
+		}
+
+
+
+
+
+
+
+	})
+
 
 })
