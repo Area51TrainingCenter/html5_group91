@@ -1,0 +1,283 @@
+* {
+	box-sizing: border-box;
+	font-family: Verdana;
+}
+ 
+
+html {
+	font-size: 20px;
+}
+
+html, body {
+	margin: 0;
+	padding:0;
+}
+
+body {
+	background-color: #AA7D39
+}
+
+header {
+	position: fixed;
+	top:0;
+	left: 0;
+	width:100%;
+	z-index: 15
+}
+
+div.cabecera {
+	margin: 0 auto;
+	width: 1000px;
+	background-color: #D4AA6A;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: .5rem;
+}
+
+div.cabecera img {
+	width: 70px;
+}
+
+div.cabecera ul {
+	margin: 0;
+	padding:0;
+	list-style: none;
+	display: flex;
+}
+
+div.cabecera a,
+div.cabecera a:link,
+div.cabecera a:active,
+div.cabecera a:visited {
+	font-size: 1rem;
+	color: #553300;
+	text-decoration: none;
+	display: block;
+	padding-left: 10px;
+	padding-right:10px;
+}
+
+div.cabecera a:hover {
+	color:#fff;
+}
+
+article.contenido {
+	background-color: orange;
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	text-align: center;
+}
+
+article.contenido h1 {
+	font-size: 4rem;
+	margin:0 0 1rem 0;
+}
+
+article.menu {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,.95);
+	position: fixed;
+	top:0;
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding:1rem;
+	left:-100%;
+	transition: left 0.5s
+}
+
+article.menu.mostrar {
+	left:0;
+}
+
+article.menu nav {
+	flex-basis: 0;
+	flex-grow: 1
+}
+
+article.menu nav ul {
+	margin: 0;
+	padding:0;
+	list-style: none;
+}
+
+article.menu nav a,
+article.menu nav a:link,
+article.menu nav a:visited,
+article.menu nav a:active {
+	text-decoration: none;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	color: #fff;
+}
+
+article.menu nav a:hover {
+	color:#f00;
+}
+
+article.menu p {
+	flex-basis: 0;
+	flex-grow: 1;
+	color:#fff;
+	text-align: right;
+	font-size:1.2rem;
+}
+
+article.quienes {
+	width:100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+article.quienes div.piratas {
+	width:1000px;
+	display: flex;
+	justify-content: space-around;
+}
+
+article.quienes div.piratas img {
+	width: 100px;
+}
+
+article.quienes div.piratas div.pirata{
+	width:200px;
+	border: 1px solid black;
+	background-color: white;
+	text-align: center;
+	padding: 1rem;
+	transition: box-shadow 700ms
+}
+
+article.quienes div.piratas div.pirata:hover {
+	box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.5)
+}
+
+article.nuestrosServicios {
+	width:100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #D4A56A
+}
+
+article.nuestrosServicios div.servicios {
+	width:1000px;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+article.nuestrosServicios div.servicios div.servicio {
+	width:200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 1px solid black;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	transition: all 700ms;
+}
+
+article.nuestrosServicios div.servicios div.servicio:hover {
+	background-color: #552F00;
+}
+
+article.nuestrosServicios div.servicios div.servicio:hover h2 {
+	color:#fff;
+}
+
+article.nuestrosProductos{
+	width:100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #D4Afff
+}
+
+article.nuestrosProductos div.productos {
+	width:1000px;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+article.nuestrosProductos div.productos div.producto {
+	width:200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 1px solid black;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	transition: all 700ms;
+}
+
+article.nuestrosProductos div.productos div.producto:hover {
+	background-color: #552F00;
+}
+
+article.nuestrosProductos div.productos div.producto:hover h2 {
+	color:#fff;
+}
+
+article.contacto {
+	width:100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+article.contacto form {
+	width:500px;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(255, 255, 255, 0.4);
+	justify-content: center;
+	align-items: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+article.contacto form input {
+	margin-top:10px;
+	margin-bottom: 10px;
+	line-height: 2rem;
+	font-size: 1.2rem;
+	width:100%;
+}
+
+article.contacto form input[type="submit"] {
+	max-width: 200px;
+	height: 80px;
+	background-color: orange;
+
+}
+
+
+
+
+
+
+
+
+
+

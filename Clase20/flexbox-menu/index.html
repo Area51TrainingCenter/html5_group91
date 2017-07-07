@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title></title>
+	<meta name="viewport" content="width=device-width;initial-scale=1;maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+
+	<header>
+		<div class="cabecera">
+			<div>
+				<img src="img/pirata.svg">
+			</div>
+			
+			<nav>
+				<ul>
+					<li><a data-scroll href="#ancla-contenido">Inicio</a></li>
+					<li><a data-scroll href="#ancla-quienes">Quiénes somos</a></li>
+					<li><a data-scroll href="#ancla-servicios">Servicios</a></li>
+					<li><a href="#">Productos</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</nav>
+
+
+		</div>
+	</header>
+
+	<!-- <a name="ancla-contenido"></a> -->
+	<article id="ancla-contenido" class="contenido">
+		<h1 class="wow bounceIn" data-wow-duration="1s" data-wow-iteration="5">Piratas</h1>
+		<p>Asociación de piratas, corsarios, ladrones, corruptos y políticos</p>
+	</article>
+
+	<!-- <a name="ancla-quienes"></a> -->
+	<article id="ancla-quienes" class="quienes">
+		<h2>Quiénes Somos</h2>
+		<div class="piratas">
+			
+			<div class="pirata wow slideInLeft">
+				<div>
+					<img src="img/pirata.svg">
+				</div>
+				<h3>Corsario</h3>
+			</div>
+
+			<div class="pirata wow slideInUp" data-wow-delay="2s">
+				<div>
+					<img src="img/pirata.svg">
+				</div>
+				<h3>Bucanero</h3>
+			</div>
+
+			<div class="pirata wow slideInRight" data-wow-offset="100">
+				<div>
+					<img src="img/pirata.svg">
+				</div>
+				<h3>Filibustero</h3>
+			</div>
+		</div>
+	</article>
+
+	<!-- <a name="ancla-servicios"></a> -->
+	<article id="ancla-servicios" class="nuestrosServicios">
+		<h2>Nuestros Servicios</h2>
+		<div class="servicios">
+
+			<div class="servicio wow rollIn" data-wow-delay=".3s">
+				<h2>Piratería</h2>
+			</div>
+
+			<div class="servicio wow rollIn" data-wow-delay=".8s">
+				<h2>Vandalismo</h2>
+			</div>
+
+			<div class="servicio wow fadeIn flip" data-wow-delay="1.3s">
+				<h2>Robo</h2>
+			</div>			
+
+		</div>
+	</article>
+
+	<article id="ancla-productos" class="nuestrosProductos">
+		<h2>Nuestros Productos</h2>
+		<div class="productos">
+
+			<div class="producto wow rollIn" data-wow-delay=".3s">
+				<h2>Esclavos</h2>
+			</div>
+
+			<div class="producto wow rollIn" data-wow-delay=".8s">
+				<h2>Oro</h2>
+			</div>
+
+			<div class="producto wow fadeIn flip" data-wow-delay="1.3s">
+				<h2>Tesoros</h2>
+			</div>			
+
+		</div>
+	</article>
+
+	<article id="ancla-contacto" class="contacto">
+		<h2>Contacto</h2>
+		<form action="">
+			<input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+			<input type="email" name="correo" placeholder="Ingrese su correo" required>
+			<input type="password" name="contrasena" placeholder="Ingrese su contraseña" required>
+			<div>
+				<input type="radio" name="sexo" value="Hombre"> Hombre
+				<input type="radio" name="sexo" value="Mujer" checked="true"> Mujer
+			</div>
+			<input type="submit" name="boton" value="Enviar">
+		</form>
+	</article>
+
+
+
+	<script src="js/vendor/jquery/jquery-3.2.1.js"></script>
+	<script src="js/vendor/wow/wow.min.js"></script>
+	<script src="js/vendor/scrollSmooting/smooth-scroll.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
