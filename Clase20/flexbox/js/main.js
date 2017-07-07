@@ -5,4 +5,6 @@ $(function(){
 		$("article.menu").toggleClass("mostrar")
 	})
 
+	new WOW().init();
+
 })

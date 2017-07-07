@@ -23,7 +23,7 @@
 	</header>
 
 	<article class="contenido">
-		<h1 class="animated bounceIn">Piratas</h1>
+		<h1 class="wow bounceIn" data-wow-duration="1s" data-wow-iteration="5">Piratas</h1>
 		<p>Asociación de piratas, corsarios, ladrones, corruptos y políticos</p>
 	</article>
 
@@ -31,26 +31,45 @@
 		<h2>Quiénes Somos</h2>
 		<div class="piratas">
 			
-			<div class="pirata animated slideInLeft">
+			<div class="pirata wow slideInLeft">
 				<div>
 					<img src="img/pirata.svg">
 				</div>
 				<h3>Corsario</h3>
 			</div>
 
-			<div class="pirata animated slideInUp">
+			<div class="pirata wow slideInUp" data-wow-delay="2s">
 				<div>
 					<img src="img/pirata.svg">
 				</div>
 				<h3>Bucanero</h3>
 			</div>
 
-			<div class="pirata animated slideInRight">
+			<div class="pirata wow slideInRight" data-wow-offset="100">
 				<div>
 					<img src="img/pirata.svg">
 				</div>
 				<h3>Filibustero</h3>
 			</div>
+		</div>
+	</article>
+
+	<article class="nuestrosServicios">
+		<h2>Nuestros Servicios</h2>
+		<div class="servicios">
+
+			<div class="servicio wow rollIn" data-wow-delay=".3s">
+				<h2>Piratería</h2>
+			</div>
+
+			<div class="servicio wow rollIn" data-wow-delay=".8s">
+				<h2>Vandalismo</h2>
+			</div>
+
+			<div class="servicio wow fadeIn flip" data-wow-delay="1.3s">
+				<h2>Robo</h2>
+			</div>			
+
 		</div>
 	</article>
 
@@ -74,6 +93,7 @@
 	</article>
 
 	<script src="js/vendor/jquery/jquery-3.2.1.js"></script>
+	<script src="js/vendor/wow/wow.min.js"></script>
 	<script src="js/main.js"></script>
 
 </body>

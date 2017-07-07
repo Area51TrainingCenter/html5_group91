@@ -151,6 +151,43 @@ article.quienes div.piratas div.pirata:hover {
 	box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.5)
 }
 
+article.nuestrosServicios {
+	width:100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #D4A56A
+}
+
+article.nuestrosServicios div.servicios {
+	width:1000px;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+article.nuestrosServicios div.servicios div.servicio {
+	width:200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 1px solid black;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	transition: all 700ms;
+}
+
+article.nuestrosServicios div.servicios div.servicio:hover {
+	background-color: #552F00;
+}
+
+article.nuestrosServicios div.servicios div.servicio:hover h2 {
+	color:#fff;
+}
 
 
 
