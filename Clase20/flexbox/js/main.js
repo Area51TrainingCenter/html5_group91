@@ -7,4 +7,6 @@ $(function(){
 
 	new WOW().init();
 
+	smoothScroll.init();
+
 })
