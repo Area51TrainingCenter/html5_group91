@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		article {
+			position:absolute;
+			bottom: 0%;
+			left: 50%;
+			margin-left: -100px;
+			width:200px;
+			height: 200px;
+			background-color: blue;
+			animation-name: crecer;
+			animation-duration: 1.5s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+			animation-direction: alternate-reverse;
+			animation-delay: 2s
+		}
+		div {
+			width:200px;
+			height: 200px;
+			border-radius:50%;
+			margin:20px auto;
+			background: radial-gradient(red, orange);
+			animation-name: crecer;
+			animation-duration: 1.5s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite; /*2*/
+			/*animation-direction: alternate;*/
+			/*animation-direction: reverse;*/
+			animation-direction: alternate-reverse;
+		}
+
+		@keyframes crecer {
+/*			0% {
+				transform:scale(1);
+			}*/
+
+			50% {
+				transform: scale(2);
+			}
+
+			100% {
+				transform:scale(3);
+			}
+/*			from {
+				transform:scale(1);
+			}
+
+			to {
+				transform:scale(3);
+			}*/
+
+
+		}
+
+	</style>
+</head>
+<body>
+
+<div></div>
+
+<article></article>
+
+
+</body>
+</html>

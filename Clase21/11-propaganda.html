@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		* {box-sizing: border-box;}
+		html, body {
+			margin: 0;
+			padding:0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+		div.contenedor {
+			width: 100vw;
+			height: 100vh;
+			background:linear-gradient(red, orange);
+			position: relative;
+		}
+
+		div.sol {
+			position: absolute;
+			top:40px;
+			right:40px;
+			width:80px;
+			height: 80px;
+			border-radius: 50%;
+			background-color: yellow;
+			box-shadow: 0 0 20px 2px yellow;
+			animation: brillar 1s infinite linear alternate,
+					   desaparezca 900ms linear 4s;
+		}
+
+		div.ola {
+			width:100%;
+			height: 100px;
+			background-image: url(olas.png);
+			position: absolute;
+			animation: moverOlas 1s linear infinite alternate;
+		}
+
+		div.ola.ola1 {
+			bottom:-30px;
+		}
+
+		div.barco {
+			position: absolute;
+			left:200px;
+			bottom: 20px;
+			/*transform: scaleX(-1);*/
+			animation: moverBarco 2.5s linear,
+				hundirBarco 8s 3s linear;
+		}
+
+		@keyframes moverBarco {
+			from {
+				left:-300px;
+			}
+		}
+
+		@keyframes hundirBarco {
+			80% {
+				transform: rotate(0deg);
+			}
+
+			90% {
+				transform: rotate(50deg);
+			}
+
+			100% {
+				transform: rotate(50deg) translateX(500px);
+			}
+		}
+
+		@keyframes moverOlas {
+			100% {
+				bottom: -20px;
+			}
+		}
+
+		@keyframes brillar {
+			to {
+				box-shadow: 0 0 20px 10px yellow;
+			}
+		}
+
+		@keyframes desaparezca {
+			87% {
+				top:40px;
+			}
+			90% {
+				top: 100px;
+			}
+
+			100% {
+				top:-120px;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="contenedor">
+		<div class="sol"></div>
+		<div class="barco">
+			<img src="barco.png">
+		</div>
+		<div class="ola ola1"></div>
+	</div>
+
+</body>
+</html>
