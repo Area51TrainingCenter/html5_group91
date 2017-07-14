@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		div.contenedorPelicula {
+			width:300px;
+			height: 400px;
+			margin:30px auto;
+		}
+
+		div.contenedorPelicula:hover div.pelicula {
+			transform: rotateY(-75deg);
+		}
+
+		div.pelicula {
+			width:300px;
+			height: 400px;
+			position: relative;
+			transform-style: preserve-3d;
+			transition: transform 350ms;
+		}
+
+		div.pelicula > div {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width:300px;
+			height: 400px;
+		}
+		div.afiche {
+			background-image: url(mujer-maravilla.jpg);
+			background-size: cover;
+			transform: translateZ(150px);
+		}
+
+		div.sinopsis {
+			background-color: rgba(0,0,0,.8);
+			transform: rotateY(90deg) translateZ(150px);
+			font-size: 14px;
+			font-family: Verdana;
+			color:white;
+		}
+		div.sinopsis h1,
+		div.sinopsis p {
+			padding:10px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="contenedorPelicula">
+		<div class="pelicula">
+			<div class="afiche"></div>
+			<div class="sinopsis">
+				<iframe width="100%" src="https://www.youtube.com/embed/R3wDsbkybVw" frameborder="0" allowfullscreen></iframe>
+				<h1>La Mujer Maravilla</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

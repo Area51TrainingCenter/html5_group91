@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			perspective: 2000px
+		}
+
+		div.contenedor {
+			width:300px;
+			height:300px;
+			/*border:1px solid black;*/
+			margin:100px auto;
+			position: relative;
+			animation: rotar 10s linear infinite;
+			transform-style: preserve-3d;
+		}
+		div.cara {
+			width:300px;
+			height: 300px;
+			position: absolute;
+			top:0;
+			left:0;
+		}
+		div.cara.cara1 {
+			background-color: green;
+			transform: translateZ(150px);
+		}
+		div.cara.cara2 {
+			background-color: yellow;
+			transform: translateZ(-150px);
+		}
+
+		div.cara.cara3 {
+			background-color: magenta;
+			transform: rotateY(90deg) translateZ(150px);
+			backface-visibility: hidden
+		}
+		div.cara.cara4 {
+			background-color: orange;
+			transform: rotateY(-90deg) translateZ(150px);
+			backface-visibility: hidden
+		}
+
+		div.cara.cara5 {
+			background-color: brown;
+			transform: rotateX(90deg) translateZ(150px);
+			backface-visibility: hidden
+		}
+
+		div.cara.cara6 {
+			background-color: navy;
+			transform: rotateX(-90deg) translateZ(150px);
+			backface-visibility: hidden
+		}
+
+		@keyframes rotarY {
+			100% { transform:rotateY(360deg); }
+		}
+
+		@keyframes rotarX {
+			100% { transform:rotateX(360deg); }
+		}
+
+		@keyframes rotar {
+			100% {
+				transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg)
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="contenedor">
+		<div class="cara cara6"></div>
+		<div class="cara cara5"></div>
+		<div class="cara cara4"></div>
+		<div class="cara cara3"></div>
+		<div class="cara cara2"></div>	
+		<div class="cara cara1"></div>
+	</div>
+
+
+</body>
+</html>
