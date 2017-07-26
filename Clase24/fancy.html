@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css">
+	<!-- <link rel="stylesheet" type="text/css" href="js/vendor/fancybox/jquery.fancybox.css"> -->
+
+</head>
+<body>
+
+<h2>Galería 1</h2>
+
+	<a href="img/estadio03.jpg" data-fancybox="galeria1">
+		<img src="img/estadio03-c.jpg">
+	</a>
+
+	<a href="img/estadio01.jpg" data-fancybox="galeria1">
+		<img src="img/estadio01-c.jpg">
+	</a>
+
+<h2>Galería 2</h2>
+
+	<a href="img/estadio02.jpg" data-fancybox="galeria2">
+		<img src="img/estadio02-c.jpg">
+	</a>
+
+	<a href="img/estadio04.jpg" data-fancybox="galeria2">
+		<img src="img/estadio04-c.jpg">
+	</a>
+	<a href="img/estadio05.png" data-fancybox="galeria2">
+		<img src="img/estadio05-c.png">
+	</a>
+
+
+	<!-- <script src="js/vendor/jquery/jquery-3.2.1.js"></script> -->
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<!-- <script src="js/vendor/fancybox/jquery.fancybox.js"></script> -->
+	<script src="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js"></script>
+
+	<hr>
+	<a href="javascript:;" data-fancybox data-src="#terminos">Términos y Condiciones</a>
+
+	<a href="javascript:;" data-type="iframe" data-fancybox data-src="terminos.html">Términos y Condiciones</a>
+
+	<hr>
+
+	<a data-fancybox href="https://www.youtube.com/watch?v=kJQP7kiw5Fk">Video</a>
+
+
+	<div id="terminos" style="display: none;width:500px;height:30vh">
+		<h2>Términos y Condiciones</h2>
+		<ol>
+			<li>Término 1</li>
+			<li>Término 2</li>
+			<li>Término 3</li>
+			<li>Término 4</li>
+		</ol>
+	</div>
+
+
+<!-- 	<iframe src="https://www.adncreativa.com/" width="500" height="300"></iframe> -->
+
+
+
+	<script>
+		$(function(){
+			$("a[data-fancybox]").fancybox()
+		})
+
+
+	</script>
+
+</body>
+</html>
